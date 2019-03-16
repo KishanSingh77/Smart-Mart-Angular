@@ -1,0 +1,19 @@
+.btn:hover {
+    background:red;
+  }
+
+
+  .viewThisResult { bottom:8px;left:380px;}
+  
+  
+ .resultContainer{
+   height: 40px
+ }
+  
+  
+  .resultContainer .hideableButton {
+      display: none;
+  }
+  .resultContainer:hover .hideableButton {
+      display: inline;
+  }
