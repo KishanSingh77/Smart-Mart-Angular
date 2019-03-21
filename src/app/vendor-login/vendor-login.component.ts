@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { FormControl, FormGroup } from "@angular/forms";
-import { LoginService } from "src/app/Services/login.service";
-import { Credentials } from "src/app/Models/Credentials";
+import { LoginService } from "src/Services/login.service";
+import { Credentials } from "src/Models/Credentials";
 import { map } from "rxjs/operators";
 import { Router } from "@angular/router";
 

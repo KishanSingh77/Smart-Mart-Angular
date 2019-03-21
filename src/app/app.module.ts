@@ -12,9 +12,10 @@ import { AppRoutingModule } from "./app.routing";
 import { HeaderComponent } from "./header/header.component";
 
 import { PaymentsComponent } from "./payments/payments.component";
-import { OrdersComponent } from './orders/orders.component';
-import { CartComponent } from './cart/cart.component';
-import { VendorLoginComponent } from './vendor-login/vendor-login.component';
+import { OrdersComponent } from "./orders/orders.component";
+import { CartComponent } from "./cart/cart.component";
+import { VendorLoginComponent } from "./vendor-login/vendor-login.component";
+import { CartService } from ".././Services/cartService";
 
 @NgModule({
   declarations: [
@@ -35,7 +36,12 @@ import { VendorLoginComponent } from './vendor-login/vendor-login.component';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [HttpClient, HttpClientModule],
+  providers: [
+    HttpClient,
+    HttpClientModule,
+    UserDashboardComponent,
+    CartService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
