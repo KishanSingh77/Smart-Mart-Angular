@@ -16,6 +16,7 @@ import { OrdersComponent } from "./orders/orders.component";
 import { CartComponent } from "./cart/cart.component";
 import { VendorLoginComponent } from "./vendor-login/vendor-login.component";
 import { CartService } from ".././Services/cartService";
+import { DecimalPipe } from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { CartService } from ".././Services/cartService";
     HttpClient,
     HttpClientModule,
     UserDashboardComponent,
-    CartService
+    CartService,
+    DecimalPipe
   ],
   bootstrap: [AppComponent]
 })

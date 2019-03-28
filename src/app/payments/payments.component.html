@@ -146,14 +146,22 @@
           <p>
             Total
             <span class="price" style="color:black"
-              ><b>${{ cartTotalCost }}</b></span
+              ><b>${{ totalCost }}</b></span
             >
           </p>
 
-          <button type="button" class="btn btn-primary btn-lg">
+          <button
+            type="button"
+            class="btn btn-primary btn-lg"
+            routerLink="/userDashboard"
+          >
             Continue browsing!
           </button>
-          <button type="button" class="btn btn-success btn-lg">
+          <button
+            type="button"
+            class="btn btn-success btn-lg"
+            (click)="checkOut()"
+          >
             Continue to checkout
           </button>
         </div>

@@ -32,7 +32,7 @@ export class UserDashboardComponent implements OnInit, OnDestroy {
     console.log("destroying user compoenent");
     console.log(this.itemsInCart);
     this.cartService.itemsInCart = this.itemsInCart;
-    console.log("end of uesr component");
+    console.log("end of user component");
   }
 
   getAllProducts() {
@@ -111,6 +111,8 @@ export class UserDashboardComponent implements OnInit, OnDestroy {
 
   addItemToCart(product) {
     this.itemsInCart.push(product);
+    console.log(this.itemsInCart);
+
     let cartCount = this.itemsInCart.length;
     alert(` ${product.name} is added to cart... ${cartCount} items in cart`);
   }

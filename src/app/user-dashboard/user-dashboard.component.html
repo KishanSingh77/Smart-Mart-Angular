@@ -37,6 +37,7 @@ text-align: left;"
         class="btn btn-warning hideableButton"
         (click)="deleteProduct(p._id)"
       >
+        <span>&#10060;</span>
         Delete Product
       </button>
     </div>
@@ -46,6 +47,7 @@ text-align: left;"
         class="btn btn-success hideableButton "
         (click)="showUpdateProductForm(p)"
       >
+        <span> &#9998; </span>
         Edit
       </button>
     </div>
@@ -55,6 +57,7 @@ text-align: left;"
         class="btn btn-success hideableButton "
         (click)="addItemToCart(p)"
       >
+        <span class="glyphicon glyphicon-shopping-cart heart"></span>
         Add to cart
       </button>
     </div>
